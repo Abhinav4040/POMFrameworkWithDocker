@@ -11,7 +11,7 @@ public class AppConstants {
 	
 
 	public static final String LOGIN_PAGE_TITLE = "Account Login";
-	public static final String ACC_PAGE_TITLE = "My Account";
+	public static final String ACC_PAGE_TITLE = "My Account1";
 
 	public static final String LOGIN_PAGE_URL_PARAM = "route=account/login";
 	public static final String ACC_PAGE_URL_PARAM = "route=account/account";
