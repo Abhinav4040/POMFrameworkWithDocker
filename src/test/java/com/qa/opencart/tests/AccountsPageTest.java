@@ -28,7 +28,7 @@ public class AccountsPageTest extends BaseTest {
 		accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
-	@Description("accPageTitleTest -- Dev Name: @Naveen Khunteta")
+	@Description("accPageTitleTest -- Dev Name: @Abhinav")
 	@Severity(SeverityLevel.MINOR)
 	@Test(priority = 1)
 	public void accPageTitleTest() {
@@ -36,28 +36,28 @@ public class AccountsPageTest extends BaseTest {
 		AssertJUnit.assertEquals(actAccPageTitle, AppConstants.ACC_PAGE_TITLE);
 	}
 
-	@Description("accPageUrlTest -- Dev Name: @Naveen Khunteta")
+	@Description("accPageUrlTest -- Dev Name: @Abhinav")
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void accPageUrlTest() {
 		AssertJUnit.assertTrue(accPage.getAccPageUrl());
 	}
 
-	@Description("Acc page search test -- Dev Name: @Naveen Khunteta")
+	@Description("Acc page search test -- Dev Name: @Abhinav")
 	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 3)
 	public void searchExistTest() {
 		AssertJUnit.assertTrue(accPage.isSearchExist());
 	}
 
-	@Description("Acc page logout link exist test -- Dev Name: @Naveen Khunteta")
+	@Description("Acc page logout link exist test -- Dev Name: @Abhinav")
 	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 4)
 	public void logoutLinkExistTest() {
 		AssertJUnit.assertTrue(accPage.isLogoutLinkExist());
 	}
 
-	@Description("Acc page header test -- Dev Name: @Naveen Khunteta")
+	@Description("Acc page header test -- Dev Name: @Abhinav")
 	@Severity(SeverityLevel.TRIVIAL)
 	@Test(priority = 5)
 	public void accPageHeadersTest() {
@@ -77,7 +77,7 @@ public class AccountsPageTest extends BaseTest {
 	}
 
 	
-	@Description("Acc page search check test -- Dev Name: @Naveen Khunteta")
+	@Description("Acc page search check test -- Dev Name: @Abhinav")
 	@Severity(SeverityLevel.CRITICAL)
 	@Test(dataProvider = "getProductKey", priority = 6)
 	public void searchCheckTest(String productKey) {
@@ -97,7 +97,7 @@ public class AccountsPageTest extends BaseTest {
 	}
 
 	
-	@Description("Acc page product search test -- Dev Name: @Naveen Khunteta")
+	@Description("Acc page product search test -- Dev Name: @Abhinav")
 	@Severity(SeverityLevel.BLOCKER)
 	@Test(dataProvider = "getProductData", priority = 7)
 	public void searchTest(String searchKey, String mainProductName) {
